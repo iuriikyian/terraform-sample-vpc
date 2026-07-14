@@ -25,7 +25,7 @@ resource "aws_subnet" "public" {
   tags = {
     Name        = "${var.environment}-public-subnet"
     Environment = var.environment
-    Subnet      = "public"
+    Subnet      = "public-1"
   }
 }
 
@@ -37,6 +37,6 @@ resource "aws_subnet" "private" {
   tags = {
     Name        = "${var.environment}-private-subnet"
     Environment = var.environment
-    Subnet      = "private"
+    Subnet      = "private-1"
   }
 }
